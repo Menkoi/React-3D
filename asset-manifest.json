@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/react-3d/static/css/main.073c9b0a.css",
-    "main.js": "/react-3d/static/js/main.f0f27db4.js",
+    "main.css": "/react-3d/static/css/main.520ee952.css",
+    "main.js": "/react-3d/static/js/main.303641b4.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
-    "static/media/logo.svg": "/react-3d/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-3d/index.html",
-    "main.073c9b0a.css.map": "/react-3d/static/css/main.073c9b0a.css.map",
-    "main.f0f27db4.js.map": "/react-3d/static/js/main.f0f27db4.js.map",
+    "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
+    "main.303641b4.js.map": "/react-3d/static/js/main.303641b4.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f0f27db4.js"
+    "static/css/main.520ee952.css",
+    "static/js/main.303641b4.js"
   ]
 }
