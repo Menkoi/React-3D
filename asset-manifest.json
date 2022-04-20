@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/react-3d/static/css/main.520ee952.css",
-    "main.js": "/react-3d/static/js/main.24fac87c.js",
+    "main.js": "/react-3d/static/js/main.bd54162f.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
-    "static/media/Shiba-test.glb": "/react-3d/static/media/Shiba-test.1377b3c5e8003cf2c575.glb",
+    "static/media/Snow.glb": "/react-3d/static/media/Snow.06573e78021fb4520898.glb",
+    "static/media/SnowCar.glb": "/react-3d/static/media/SnowCar.3199c60a4b2914c7a0d1.glb",
+    "static/media/MountainOne.glb": "/react-3d/static/media/MountainOne.70ca560a37c2fa9d22c3.glb",
     "index.html": "/react-3d/index.html",
     "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
-    "main.24fac87c.js.map": "/react-3d/static/js/main.24fac87c.js.map",
+    "main.bd54162f.js.map": "/react-3d/static/js/main.bd54162f.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.520ee952.css",
-    "static/js/main.24fac87c.js"
+    "static/js/main.bd54162f.js"
   ]
 }
