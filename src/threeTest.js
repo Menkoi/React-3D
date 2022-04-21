@@ -1,8 +1,8 @@
-import React, {Suspense, useRef} from "react";
+import React, {Suspense, useRef, useState} from "react";
 import {Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { OrbitControls, Stars, Box  } from "@react-three/drei";
 import SpaceScene from './components/SpacePod';
-//import SpaceBackground from './components/SpaceBackground';
+
 
 
 function StarSpin() {
@@ -10,7 +10,6 @@ function StarSpin() {
     useFrame(() => {
         scene.current.rotation.y += 0.0005;
         scene.current.rotation.x += 0.0002;
-        //scene.current.rotation.z += 0.04;
     });
     return (
         <group ref={scene}>
@@ -19,16 +18,39 @@ function StarSpin() {
     )
 }
 
-  
+
+function CameraTest() {
+  console.log('Box was clicked');
+  const scene = React.useRef();
+  const [active, setActive] = useState(false);
+
+    useFrame((state) => {
+      state.camera.position.x = -11
+      state.camera.position.y = 10
+      state.camera.position.z = -20 
+      //state.camera.lookAt(5, 1, 5)
+      state.camera.updateProjectionMatrix()
+    });
+    return (
+        <group ref={scene}>
+          <Box
+           onClick={() => setActive(!active)}>
+           </Box>
+           
+        </group>
+    )
+}
+
  export default function ThreeTest() {
     return (
       <div className="MainTest">
-        <Canvas camera={{ position: [-10, 10, -30], fov: 70}}>
+        <Canvas>
           <color attach="background" args={['#161c24']}/>
           <ambientLight intensity={0.01} />
           <pointLight position={[-10, 10, 10]} />
           <Suspense fallback={null}>
             <SpaceScene></SpaceScene>
+            <CameraTest></CameraTest>
             <StarSpin></StarSpin>
           </Suspense>
           <OrbitControls />
