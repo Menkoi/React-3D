@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-3d/static/css/main.520ee952.css",
-    "main.js": "/react-3d/static/js/main.3fecc20f.js",
+    "main.js": "/react-3d/static/js/main.370d008e.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
     "static/media/SpacePod.glb": "/react-3d/static/media/SpacePod.d7b1d3ad62704bd9cc48.glb",
     "index.html": "/react-3d/index.html",
     "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
-    "main.3fecc20f.js.map": "/react-3d/static/js/main.3fecc20f.js.map",
+    "main.370d008e.js.map": "/react-3d/static/js/main.370d008e.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.520ee952.css",
-    "static/js/main.3fecc20f.js"
+    "static/js/main.370d008e.js"
   ]
 }
