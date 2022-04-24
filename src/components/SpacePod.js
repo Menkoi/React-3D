@@ -4,7 +4,7 @@ import SpacePod from '../Models/SpacePod.glb';
 
 function SpaceImport(props) {
     const gltf = useGLTF(SpacePod);
-    return <primitive object={gltf.scene} scale={[10,10,10]} position={[-4,-10,-20]}/>;
+    return <primitive object={gltf.scene} scale={[10,10,10]} position={[-4,-10,-15]}/>;
 };
 
 function SpaceScene() {
