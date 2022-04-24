@@ -1,8 +1,11 @@
 import React, {Suspense, useRef, useState} from "react";
-import {Canvas, useFrame } from "@react-three/fiber";
-import { Stars, Box, PerspectiveCamera } from "@react-three/drei";
+import {Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Stars, Box, PerspectiveCamera, Html } from "@react-three/drei";
 import SpaceScene from './components/SpacePod';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
+
+import Bear from './img/spar_testing.jpg';
+import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
 
 function StarSpin() {
     const scene = useRef();
@@ -37,7 +40,7 @@ function StarSpin() {
 //////////////////////////////////////////////////////////////////////
 
 
-function BoxRed() {
+function BoxCameraOne() {
   console.log("Box hover")
   const ref = useRef();
   const [hover, set] = useState(false)
@@ -45,9 +48,9 @@ function BoxRed() {
   useFrame(() => {
     let scale = (ref.current.scale.x += ((hover ? 1.4 : 1) - ref.current.scale.x) * 0.1)
     ref.current.scale.set(scale, scale, scale)
-    ref.current.position.x = 3;
-    ref.current.position.y = -4;
-    ref.current.position.z = 1;
+    ref.current.position.x = -2;
+    ref.current.position.y = -3;
+    ref.current.position.z = 1.5;
 
     ref.current.rotation.y += 0.004;
     ref.current.rotation.x += 0.004;
@@ -74,7 +77,7 @@ function BoxRed() {
   )
 }
 
-function BoxWhite() {
+function BoxCameraOneBack() {
   console.log("Box hover")
   const ref = useRef();
   const [hover, set] = useState(false)
@@ -83,7 +86,7 @@ function BoxWhite() {
     let scale = (ref.current.scale.x += ((hover ? 1.4 : 1) - ref.current.scale.x) * 0.1)
     ref.current.scale.set(scale, scale, scale)
     // Box Position
-    ref.current.position.x = -23;
+    ref.current.position.x = -22;
     ref.current.position.y = 7;
     ref.current.position.z = -20;
 
@@ -108,7 +111,86 @@ function BoxWhite() {
            
            <mesh>
            <boxBufferGeometry/>
-           <meshStandardMaterial color={"White"} />
+           <meshStandardMaterial color={"red"} />
+           </mesh>
+      </group>
+      
+  )
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+function BoxCameraTwo() {
+  console.log("Box hover")
+  const ref = useRef();
+  const [hover, set] = useState(false)
+  const texture = useLoader(TextureLoader, Bear)
+  useFrame(() => {
+    let scale = (ref.current.scale.x += ((hover ? 1.4 : 1) - ref.current.scale.x) * 0.1)
+    ref.current.scale.set(scale, scale, scale)
+    ref.current.position.x = -5;
+    ref.current.position.y = -2.5;
+    ref.current.position.z = 1;
+
+    //Box Rotation
+    ref.current.rotation.y += -0.002;
+    ref.current.rotation.x += -0.003;
+    
+});
+  
+  return (
+      <group ref={ref}>
+        <Box onClick={(e) => {
+          e.camera.position.x = -8
+          e.camera.position.y = -4
+          e.camera.position.z = -24.2
+
+          e.camera.rotation.y = 1.2
+          
+        console.log('Box Clicked', e)}}
+           onPointerOver={() => set(true)}  
+           onPointerOut={() => set(false)} 
+           castShadow 
+           />
+           <mesh>
+           <boxBufferGeometry/>
+           <meshStandardMaterial map={texture}/>
+           </mesh>
+      </group>
+      
+  )
+}
+
+function BoxCameraTwoBack() {
+  console.log("Box hover")
+  const ref = useRef();
+  const [hover, set] = useState(false)
+  const texture = useLoader(TextureLoader, Bear)
+  useFrame(() => {
+    let scale = (ref.current.scale.x += ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1)
+    ref.current.scale.set(scale, scale, scale)
+    ref.current.position.x = 9.2;
+    ref.current.position.y = -0.15;
+    ref.current.position.z = -0.5; 
+});
+  
+  return (
+      <group ref={ref}>
+        <Box onClick={(e) => {
+          e.camera.position.x = 1
+          e.camera.position.y = 1
+          e.camera.position.z = 1
+
+          e.camera.rotation.y = 0.01
+          
+        console.log('Box Clicked', e)}}
+           onPointerOver={() => set(true)}  
+           onPointerOut={() => set(false)} 
+           castShadow 
+           />
+           <mesh>
+           <boxBufferGeometry/>
+           <meshStandardMaterial map={texture}/>
            </mesh>
       </group>
       
@@ -121,15 +203,17 @@ function BoxWhite() {
         <Canvas>
           <color attach="background" args={['#161c24']}/>
           <ambientLight intensity={0.01} />
-          <pointLight position={[-10, 10, 10]} />
+          <pointLight position={[1, 10, 10]} />
           <Suspense fallback={null}>
             
             <SpaceScene></SpaceScene>
             <StarSpin></StarSpin>
 
-            
-            <BoxRed/>
-            <BoxWhite/>
+            <BoxCameraOne/>
+            <BoxCameraOneBack/>
+
+            <BoxCameraTwo/>
+            <BoxCameraTwoBack/>
 
             <CameraMain/>
             <EffectComposer>
