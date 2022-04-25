@@ -1,11 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
-import ThreeTest from './threeTest';
+import ReactThree from './ReactThree';
 
 function App() {
   return (
     <div className="App">
-      <ThreeTest></ThreeTest>
+      <ReactThree/>
     </div>
   );
 }

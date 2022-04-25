@@ -1,16 +1,15 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
-import SpacePod from '../Models/SpacePod.glb';
+import SpaceModel from '../Models/SpacePod.glb';
 
-function SpaceImport(props) {
-    const gltf = useGLTF(SpacePod);
+function SpaceImport() {
+    const gltf = useGLTF(SpaceModel);
     return <primitive object={gltf.scene} scale={[10,10,10]} position={[-4,-10,-15]}/>;
 };
 
-function SpaceScene() {
+export default function SpacePod() {
 return (
     <SpaceImport />
 )
 }
 
-export default SpaceScene;
