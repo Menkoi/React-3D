@@ -1,10 +1,17 @@
 import React, { useRef, useState} from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useLoader } from "@react-three/fiber";
 import { Cylinder } from "@react-three/drei";
 
- function ProjectOne() {
+import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
+import Github from '../img/github-logo.png';
+import LinkedIn from '../img/linkedin-logo.png';
+import Spar from '../img/spar_testing.jpg'
+
+
+ function GitHub() {
     const ref = useRef();
     const [hover, set] = useState(false);
+    const texture = useLoader(TextureLoader, Github)
 
     useFrame(() => {
       let scale = (ref.current.scale.x +=
@@ -14,14 +21,16 @@ import { Cylinder } from "@react-three/drei";
       ref.current.position.y = 0.5;
       ref.current.position.z = -0.8;
 
-      ref.current.rotation.x = 4.5;
       ref.current.rotation.z = 1.6; 
     });
 
     return (
       <group ref={ref}>
         <Cylinder
-          onClick={(e) => {
+          onClick={(e) => { 
+            e.Github(
+              window.open('https://github.com/Menkoi')
+            )
             console.log("Box Clicked", e);
           }}
           onPointerOver={() => set(true)}
@@ -31,15 +40,16 @@ import { Cylinder } from "@react-three/drei";
 
         <mesh>
           <cylinderBufferGeometry />
-          <meshStandardMaterial color={"red"} />
+          <meshStandardMaterial color={"white"} map={texture} />
         </mesh>
       </group>
     );
 }
 
-function ProjectTwo() {
+function LinkIn() {
   const ref = useRef();
   const [hover, set] = useState(false);
+  const texture = useLoader(TextureLoader, LinkedIn)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
@@ -49,7 +59,6 @@ function ProjectTwo() {
     ref.current.position.y = 0.5;
     ref.current.position.z = -0.4;
 
-    ref.current.rotation.x = 4.5;
     ref.current.rotation.z = 1.6;
   });
 
@@ -57,6 +66,9 @@ function ProjectTwo() {
     <group ref={ref}>
       <Cylinder
         onClick={(e) => {
+          e.LinkIn(
+            window.open('https://www.linkedin.com/in/brandon-burton-9b59a2215/')
+          )
           console.log("Box Clicked", e);
         }}
         onPointerOver={() => set(true)}
@@ -66,7 +78,7 @@ function ProjectTwo() {
 
       <mesh>
         <cylinderBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} map={texture}/>
       </mesh>
     </group>
   );
@@ -75,6 +87,7 @@ function ProjectTwo() {
 function ProjectThree() {
   const ref = useRef();
   const [hover, set] = useState(false);
+  const texture = useLoader(TextureLoader, Spar)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
@@ -84,7 +97,6 @@ function ProjectThree() {
     ref.current.position.y = 0.5;
     ref.current.position.z = -0.01;
 
-    ref.current.rotation.x = 4.5;
     ref.current.rotation.z = 1.6;
   });
 
@@ -101,7 +113,7 @@ function ProjectThree() {
 
       <mesh>
         <cylinderBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} map={texture}/>
       </mesh>
     </group>
   );
@@ -111,8 +123,8 @@ function ProjectThree() {
 export default function Contact() {
   return(
     <group>
-      <ProjectOne/>
-      <ProjectTwo/>
+      <GitHub/>
+      <LinkIn/>
       <ProjectThree/>
     </group>
   )
