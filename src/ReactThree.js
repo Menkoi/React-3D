@@ -1,12 +1,20 @@
 import React, {Suspense, useRef } from "react";
 import {Canvas, useFrame } from "@react-three/fiber";
-import {  PerspectiveCamera } from "@react-three/drei";
+import {  OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
+import Font from './components/Font';
+import Contact from './components/Contact';
 import SpacePod from './components/SpacePod';
 import SpaceBackground from "./components/SpaceBackground";
 import CameraFunction from './components/Camera';
 
+import Spar from './components/Projects'
+
+
+
+
+/////////////////////////////////////////////////////////
 
 function CameraDefault() {
   const scene = useRef();
@@ -39,6 +47,10 @@ function CameraDefault() {
 
             <CameraDefault/>
             <CameraFunction/>
+
+            <Font/>
+            <Spar/>
+            <Contact/>
             
             <EffectComposer>
             <Bloom intensity={0.5} kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.4} />

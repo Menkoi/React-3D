@@ -139,7 +139,7 @@ function BoxCameraTwo() {
       ref.current.scale.set(scale, scale, scale)
       ref.current.position.x = 9.2;
       ref.current.position.y = -0.15;
-      ref.current.position.z = -0.5; 
+      ref.current.position.z = -0.4; 
   });
     
     return (
