@@ -4,7 +4,7 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
 import Earth from '../img/Earth.jpg';
 
-export default function SphereLoading() {
+export default function EarthLoading() {
     const scene = useRef();
     const texture = useLoader(TextureLoader, Earth)
     useFrame(() => {

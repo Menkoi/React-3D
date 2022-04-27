@@ -9,7 +9,7 @@ import SpacePod from './components/SpacePod';
 import SpaceBackground from "./components/SpaceBackground";
 import CameraFunction from './components/Camera';
 import Spar from './components/Projects';
-import SphereLoading from "./components/Loading";
+import EarthLoading from "./components/Loading";
 
 function CameraDefault() {
   const scene = useRef();
@@ -27,6 +27,8 @@ function CameraDefault() {
   )
 }
 
+
+
  export default function ReactThree() {
     return (
       <div className="MainTest">
@@ -34,7 +36,7 @@ function CameraDefault() {
           <color attach="background" args={['#161c24']}/>
           <ambientLight intensity={0.01} />
           <pointLight position={[1, 10, 10]} />
-          <Suspense fallback={<SphereLoading/>}>
+          <Suspense fallback={<EarthLoading/>}>
             
             <SpacePod/>
             <SpaceBackground/>
