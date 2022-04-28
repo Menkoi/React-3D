@@ -1,9 +1,6 @@
 import React, { useRef, useState} from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { Box } from "@react-three/drei";
-
-import TestImg from '../img/spar_testing.jpg';
-import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
 
 import { useGLTF } from "@react-three/drei";
 import ArrowOne from '../Models/ArrowOne.glb';
@@ -34,6 +31,7 @@ function CameraOne() {
         e.camera.position.z = 25;
         console.log("arrow clicked", e);
       }}
+      
     />
   );
 };
@@ -96,7 +94,7 @@ function CameraTwo() {
     console.log("Box hover")
     const ref = useRef();
     const [hover, set] = useState(false)
-    const texture = useLoader(TextureLoader, TestImg)
+  
     useFrame(() => {
       let scale = (ref.current.scale.x += ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1)
       ref.current.scale.set(scale, scale, scale)
@@ -121,7 +119,7 @@ function CameraTwo() {
              />
              <mesh>
              <boxBufferGeometry/>
-             <meshStandardMaterial map={texture}/>
+             <meshStandardMaterial color={'red'}/>
              </mesh>
         </group>
     )

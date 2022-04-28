@@ -5,7 +5,7 @@ import { Cylinder } from "@react-three/drei";
 import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
 import Github from '../img/github-logo.png';
 import LinkedIn from '../img/linkedin-logo.png';
-import Spar from '../img/spar_testing.jpg'
+import EmailLogo from '../img/Email.jpg'
 
 
  function GitHub() {
@@ -18,7 +18,7 @@ import Spar from '../img/spar_testing.jpg'
         ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
       ref.current.scale.set(scale, scale, scale);
       ref.current.position.x = -26;
-      ref.current.position.y = 35;
+      ref.current.position.y = 34;
       ref.current.position.z = -20;
 
       ref.current.rotation.z = 1.6;
@@ -42,7 +42,7 @@ import Spar from '../img/spar_testing.jpg'
 
         <mesh>
           <cylinderBufferGeometry />
-          <meshStandardMaterial color={"white"} map={texture} />
+          <meshStandardMaterial map={texture} />
         </mesh>
       </group>
     );
@@ -58,7 +58,7 @@ function LinkIn() {
       ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -29.1;
-    ref.current.position.y =35.2;
+    ref.current.position.y =34.2;
     ref.current.position.z = -20;
 
     ref.current.rotation.z = 1.6;
@@ -81,23 +81,23 @@ function LinkIn() {
 
       <mesh>
         <cylinderBufferGeometry />
-        <meshStandardMaterial color={"white"} map={texture}/>
+        <meshStandardMaterial  map={texture}/>
       </mesh>
     </group>
   );
 }
 
-function ProjectThree() {
+function Email() {
   const ref = useRef();
   const [hover, set] = useState(false);
-  const texture = useLoader(TextureLoader, Spar)
+  const texture = useLoader(TextureLoader, EmailLogo)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
       ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -32;
-    ref.current.position.y = 35.4;
+    ref.current.position.y = 34.4;
     ref.current.position.z = -20;
 
     ref.current.rotation.z = 1.6;
@@ -108,7 +108,9 @@ function ProjectThree() {
     <group ref={ref}>
       <Cylinder
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          e.Email(
+            window.open('mailto:celaeon@gmail.com')
+          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -117,7 +119,7 @@ function ProjectThree() {
 
       <mesh>
         <cylinderBufferGeometry />
-        <meshStandardMaterial color={"white"} map={texture}/>
+        <meshStandardMaterial map={texture}/>
       </mesh>
     </group>
   );
@@ -129,7 +131,7 @@ export default function Contact() {
     <group>
       <GitHub/>
       <LinkIn/>
-      <ProjectThree/>
+      <Email/>
     </group>
   )
 }

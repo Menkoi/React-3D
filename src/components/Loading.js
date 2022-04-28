@@ -14,7 +14,7 @@ export default function EarthLoading() {
     return (
         <group ref={scene}>
             <mesh>
-          
+            <pointLight position={[1, 10, 10]} />
           <sphereBufferGeometry />
           <meshStandardMaterial color={"white"} map={texture} />
           <Html  position={[1,1,1]}style={{

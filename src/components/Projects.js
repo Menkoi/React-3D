@@ -1,17 +1,25 @@
-import React, { useRef, useState} from "react";
-import { useFrame } from "@react-three/fiber";
-import { Box } from "@react-three/drei";
+import React, { useRef, useState } from "react";
+import { useFrame, useLoader } from "@react-three/fiber";
+import { Box, Html } from "@react-three/drei";
+
+import { TextureLoader } from 'three/src/loaders/TextureLoader';
+import Spar from '../img/spar_testing.jpg';
+import BookEnd from '../img/BookEndT.png';
+import RewardBank from '../img/RewardBankT.png';
+import SaveTv from '../img/SaveTvT.png';
+import GithubRepo from './GithubRepo';
 
  function ProjectOne() {
     const ref = useRef();
     const [hover, set] = useState(false);
+    const texture = useLoader(TextureLoader, Spar)
 
     useFrame(() => {
       let scale = (ref.current.scale.x +=
-        ((hover ? 1.5 : 1.2) - ref.current.scale.x) * 0.1);
+        ((hover ? 1.4 : 1.2) - ref.current.scale.x) * 0.1);
       ref.current.scale.set(scale, scale, scale);
       ref.current.position.x = -26;
-      ref.current.position.y = 43;
+      ref.current.position.y = 42.7;
       ref.current.position.z = -20;
       ref.current.rotation.y = 0.4;
     });
@@ -21,6 +29,9 @@ import { Box } from "@react-three/drei";
         <Box
           onClick={(e) => {
             console.log("Project 1 Clicked", e);
+            e.Spar(
+              window.open('https://menkoi.github.io/spar/#/')
+            )
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
@@ -28,7 +39,13 @@ import { Box } from "@react-three/drei";
         />
         <mesh>
           <boxBufferGeometry />
-          <meshStandardMaterial color={"white"} />
+          <meshStandardMaterial map={texture} />
+          <Html  position={[0.5,1.6,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>SPAR</p>
+          </Html>
         </mesh>
       </group>
     );
@@ -37,13 +54,14 @@ import { Box } from "@react-three/drei";
 function ProjectTwo() {
   const ref = useRef();
   const [hover, set] = useState(false);
+  const texture = useLoader(TextureLoader, BookEnd)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 1.5 : 1.1) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.3 : 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -29.2;
-    ref.current.position.y = 42.7;
+    ref.current.position.y = 42.4;
     ref.current.position.z = -20.2;
     ref.current.rotation.y = 0.4;
   });
@@ -53,15 +71,23 @@ function ProjectTwo() {
       <Box
         onClick={(e) => {
           console.log("Project 2 Clicked", e);
+          e.BookEnd(
+            window.open('http://bookend-recommendations.herokuapp.com/')
+          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
         castShadow
       />
-
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"white"} />
+        <meshStandardMaterial map={texture}/>
+        <Html  position={[0.6,1.6,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>BOOKEND</p>
+          </Html>
       </mesh>
     </group>
   );
@@ -70,13 +96,14 @@ function ProjectTwo() {
 function ProjectThree() {
   const ref = useRef();
   const [hover, set] = useState(false);
+  const texture = useLoader(TextureLoader, SaveTv)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 1.5 : 1.1) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.3 : 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -32;
-    ref.current.position.y = 42.5;
+    ref.current.position.y = 42.2;
     ref.current.position.z = -20;
     ref.current.rotation.y = 0.4;
   });
@@ -86,6 +113,9 @@ function ProjectThree() {
       <Box
         onClick={(e) => {
           console.log("Project 3 Clicked", e);
+          e.SaveTv(
+            window.open('https://utbootcampgroup2.github.io/SaveTV/')
+          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -94,7 +124,13 @@ function ProjectThree() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"white"} />
+        <meshStandardMaterial map={texture} />
+        <Html  position={[0.3,1.6,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>SAVETV</p>
+          </Html>
       </mesh>
     </group>
   );
@@ -103,13 +139,14 @@ function ProjectThree() {
 function ProjectFour() {
   const ref = useRef();
   const [hover, set] = useState(false);
+  const texture = useLoader(TextureLoader, RewardBank)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
       ((hover ? 1.5 : 1.3) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -26;
-    ref.current.position.y = 40.1;
+    ref.current.position.y = 39.2;
     ref.current.position.z = -20;
     ref.current.rotation.y = 0.4;
   });
@@ -119,15 +156,23 @@ function ProjectFour() {
       <Box
         onClick={(e) => {
           console.log("Project 4 Clicked", e);
+          e.RewardBank(
+            window.open('https://rocky-dawn-18669.herokuapp.com')
+          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
         castShadow
       />
-
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"white"} />
+        <meshStandardMaterial map={texture} />
+        <Html  position={[0.6,1.3,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>SAVETV</p>
+          </Html>
       </mesh>
     </group>
   );
@@ -139,10 +184,10 @@ function ProjectFive() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 1.5 : 1.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.4 : 1.2) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -29.1;
-    ref.current.position.y = 40;
+    ref.current.position.y = 39.2;
     ref.current.position.z = -20;
     ref.current.rotation.y = 0.4;
   });
@@ -159,7 +204,13 @@ function ProjectFive() {
       />
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"white"} />
+        <meshStandardMaterial />
+        <Html  position={[0.4,1.3,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>LOREM</p>
+          </Html>
       </mesh>
     </group>
   );
@@ -171,10 +222,10 @@ function ProjectSix() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 1.5: 1.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.3: 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -32;
-    ref.current.position.y = 40;
+    ref.current.position.y = 39.1;
     ref.current.position.z = -20;
     ref.current.rotation.y = 0.4;
   });
@@ -192,7 +243,13 @@ function ProjectSix() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"white"} />
+        <meshStandardMaterial />
+        <Html  position={[0.2,1.3,1]}style={{
+            color: "white",
+            fontWeight:'Bold'
+          }}>
+            <p>LOREM</p>
+          </Html>
       </mesh>
     </group>
   );
@@ -208,6 +265,8 @@ export default function Projects() {
       <ProjectFour/>
       <ProjectFive/>
       <ProjectSix/>
+
+      <GithubRepo/>
     </group>
   )
 }
