@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-3d/static/css/main.520ee952.css",
-    "main.js": "/react-3d/static/js/main.57d1e2c6.js",
+    "main.js": "/react-3d/static/js/main.d3f46fed.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
     "static/media/SpacePod.glb": "/react-3d/static/media/SpacePod.d7b1d3ad62704bd9cc48.glb",
     "static/media/spar_testing.jpg": "/react-3d/static/media/spar_testing.e487b64508a19d3f936c.jpg",
@@ -11,11 +11,11 @@
     "static/media/ArrowTwo.glb": "/react-3d/static/media/ArrowTwo.73d0330e8f2e1e2e0600.glb",
     "index.html": "/react-3d/index.html",
     "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
-    "main.57d1e2c6.js.map": "/react-3d/static/js/main.57d1e2c6.js.map",
+    "main.d3f46fed.js.map": "/react-3d/static/js/main.d3f46fed.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.520ee952.css",
-    "static/js/main.57d1e2c6.js"
+    "static/js/main.d3f46fed.js"
   ]
 }
