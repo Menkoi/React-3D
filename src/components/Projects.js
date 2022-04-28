@@ -40,7 +40,7 @@ import GithubRepo from './GithubRepo';
         <mesh>
           <boxBufferGeometry />
           <meshStandardMaterial map={texture} />
-          <Html  position={[0.5,1.6,1]}style={{
+          <Html  position={[0.5,1.8,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -82,7 +82,7 @@ function ProjectTwo() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial map={texture}/>
-        <Html  position={[0.6,1.6,1]}style={{
+        <Html  position={[0.6,1.8,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -125,7 +125,7 @@ function ProjectThree() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial map={texture} />
-        <Html  position={[0.3,1.6,1]}style={{
+        <Html  position={[0.3,1.8,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -167,7 +167,7 @@ function ProjectFour() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial map={texture} />
-        <Html  position={[0.6,1.3,1]}style={{
+        <Html  position={[0.6,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -205,7 +205,7 @@ function ProjectFive() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial />
-        <Html  position={[0.4,1.3,1]}style={{
+        <Html  position={[0.4,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -225,7 +225,7 @@ function ProjectSix() {
       ((hover ? 1.3: 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
     ref.current.position.x = -32;
-    ref.current.position.y = 39.1;
+    ref.current.position.y = 39.2;
     ref.current.position.z = -20;
     ref.current.rotation.y = 0.4;
   });
@@ -244,7 +244,7 @@ function ProjectSix() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial />
-        <Html  position={[0.2,1.3,1]}style={{
+        <Html  position={[0.2,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>

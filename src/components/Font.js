@@ -73,12 +73,54 @@ function ContactText() {
     );
 }
 
+function ArrowRightText() {
+  const ref = useRef()
+  useFrame(() => {
+      ref.current.rotation.y =3.5;  
+  });
+
+  return (
+    <mesh position={[-6, -1.2, 1]} ref={ref}>
+      <Text
+        scale={[6, 6, 6]}
+        color="white" // default
+        anchorX="center" // default
+        anchorY="middle" // default
+      >
+        PROJECTS
+      </Text>
+    </mesh>
+  );
+}
+
+function ArrowleftText() {
+  const ref = useRef()
+  useFrame(() => {
+      ref.current.rotation.y =3.5;  
+  });
+
+  return (
+    <mesh position={[-0.4, -1.8, 1]} ref={ref}>
+      <Text
+        scale={[6, 6, 6]}
+        color="white" // default
+        anchorX="center" // default
+        anchorY="middle" // default
+      >
+        LOREM IPSUM
+      </Text>
+    </mesh>
+  );
+}
+
 export default function Font() {
 return (
     <group>
         <ProjectText/>
         <Info/>
         <ContactText/>
+        <ArrowRightText/>
+        <ArrowleftText/>
     </group>
 )
     

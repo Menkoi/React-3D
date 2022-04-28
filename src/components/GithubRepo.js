@@ -148,7 +148,7 @@ function GitHubOne() {
     useFrame(() => {
       ref.current.scale.set(0.5,0.5,0.5);
       ref.current.position.x = -32;
-      ref.current.position.y = 38.3;
+      ref.current.position.y = 38.4;
       ref.current.position.z = -20;
       ref.current.rotation.y += 0.01;
     });
