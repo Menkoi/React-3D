@@ -8,27 +8,27 @@ import { Box } from "@react-three/drei";
 
     useFrame(() => {
       let scale = (ref.current.scale.x +=
-        ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+        ((hover ? 1.5 : 1.2) - ref.current.scale.x) * 0.1);
       ref.current.scale.set(scale, scale, scale);
-      ref.current.position.x = 9.3;
-      ref.current.position.y = 1.7;
-      ref.current.position.z = -0.8;
+      ref.current.position.x = -26;
+      ref.current.position.y = 43;
+      ref.current.position.z = -20;
+      ref.current.rotation.y = 0.4;
     });
 
     return (
       <group ref={ref}>
         <Box
           onClick={(e) => {
-            console.log("Box Clicked", e);
+            console.log("Project 1 Clicked", e);
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
           castShadow
         />
-
         <mesh>
           <boxBufferGeometry />
-          <meshStandardMaterial color={"red"} />
+          <meshStandardMaterial color={"white"} />
         </mesh>
       </group>
     );
@@ -40,18 +40,19 @@ function ProjectTwo() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.5 : 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 1.7;
-    ref.current.position.z = -0.4;
+    ref.current.position.x = -29.2;
+    ref.current.position.y = 42.7;
+    ref.current.position.z = -20.2;
+    ref.current.rotation.y = 0.4;
   });
 
   return (
     <group ref={ref}>
       <Box
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          console.log("Project 2 Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -60,7 +61,7 @@ function ProjectTwo() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} />
       </mesh>
     </group>
   );
@@ -72,21 +73,19 @@ function ProjectThree() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.5 : 1.1) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 1.7;
-    ref.current.position.z = -0.01;
-
-    //ref.current.rotation.x = 4.5;
-    //ref.current.rotation.z = 1.6;
+    ref.current.position.x = -32;
+    ref.current.position.y = 42.5;
+    ref.current.position.z = -20;
+    ref.current.rotation.y = 0.4;
   });
 
   return (
     <group ref={ref}>
       <Box
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          console.log("Project 3 Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -95,7 +94,7 @@ function ProjectThree() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} />
       </mesh>
     </group>
   );
@@ -107,20 +106,19 @@ function ProjectFour() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.5 : 1.3) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 1.3;
-    ref.current.position.z = -0.8;
-
-    
+    ref.current.position.x = -26;
+    ref.current.position.y = 40.1;
+    ref.current.position.z = -20;
+    ref.current.rotation.y = 0.4;
   });
 
   return (
     <group ref={ref}>
       <Box
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          console.log("Project 4 Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -129,7 +127,7 @@ function ProjectFour() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} />
       </mesh>
     </group>
   );
@@ -141,27 +139,27 @@ function ProjectFive() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.5 : 1.2) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 1.3;
-    ref.current.position.z = -0.4;
+    ref.current.position.x = -29.1;
+    ref.current.position.y = 40;
+    ref.current.position.z = -20;
+    ref.current.rotation.y = 0.4;
   });
 
   return (
     <group ref={ref}>
       <Box
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          console.log("Project 5 Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
         castShadow
       />
-
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} />
       </mesh>
     </group>
   );
@@ -173,18 +171,19 @@ function ProjectSix() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.3 : 0.2) - ref.current.scale.x) * 0.1);
+      ((hover ? 1.5: 1.2) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 1.3;
-    ref.current.position.z = -0.01;
+    ref.current.position.x = -32;
+    ref.current.position.y = 40;
+    ref.current.position.z = -20;
+    ref.current.rotation.y = 0.4;
   });
 
   return (
     <group ref={ref}>
       <Box
         onClick={(e) => {
-          console.log("Box Clicked", e);
+          console.log("Project 6 Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -193,7 +192,7 @@ function ProjectSix() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial color={"red"} />
+        <meshStandardMaterial color={"white"} />
       </mesh>
     </group>
   );
@@ -202,6 +201,7 @@ function ProjectSix() {
 export default function Projects() {
   return(
     <group>
+      <pointLight position={[-90, 40, -21]} />
       <ProjectOne/>
       <ProjectTwo/>
       <ProjectThree/>

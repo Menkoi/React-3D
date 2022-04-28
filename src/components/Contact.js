@@ -15,13 +15,15 @@ import Spar from '../img/spar_testing.jpg'
 
     useFrame(() => {
       let scale = (ref.current.scale.x +=
-        ((hover ? 0.2 : 0.1) - ref.current.scale.x) * 0.1);
+        ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
       ref.current.scale.set(scale, scale, scale);
-      ref.current.position.x = 9.3;
-      ref.current.position.y = 0.5;
-      ref.current.position.z = -0.8;
+      ref.current.position.x = -26;
+      ref.current.position.y = 35;
+      ref.current.position.z = -20;
 
-      ref.current.rotation.z = 1.6; 
+      ref.current.rotation.z = 1.6;
+      ref.current.rotation.y = -1.1;
+
     });
 
     return (
@@ -53,13 +55,14 @@ function LinkIn() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.2 : 0.1) - ref.current.scale.x) * 0.1);
+      ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 0.5;
-    ref.current.position.z = -0.4;
+    ref.current.position.x = -29.1;
+    ref.current.position.y =35.2;
+    ref.current.position.z = -20;
 
     ref.current.rotation.z = 1.6;
+    ref.current.rotation.y = -1.2;
   });
 
   return (
@@ -91,13 +94,14 @@ function ProjectThree() {
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
-      ((hover ? 0.2 : 0.1) - ref.current.scale.x) * 0.1);
+      ((hover ? 1 : 0.8) - ref.current.scale.x) * 0.1);
     ref.current.scale.set(scale, scale, scale);
-    ref.current.position.x = 9.3;
-    ref.current.position.y = 0.5;
-    ref.current.position.z = -0.01;
+    ref.current.position.x = -32;
+    ref.current.position.y = 35.4;
+    ref.current.position.z = -20;
 
     ref.current.rotation.z = 1.6;
+    ref.current.rotation.y = -1.3;
   });
 
   return (

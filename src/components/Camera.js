@@ -30,7 +30,7 @@ function CameraOne() {
       castShadow
       onClick={(e) => {
         e.camera.position.x = 17;
-        e.camera.position.y = 10;
+        e.camera.position.y = 34;
         e.camera.position.z = 25;
         console.log("arrow clicked", e);
       }}
@@ -52,7 +52,7 @@ function CameraOneBack() {
   return <primitive
       ref={ref}
       object={gltf.scene}
-      position={[-27.8, 5.5, -15]}
+      position={[-27, 30, -15]}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
       castShadow

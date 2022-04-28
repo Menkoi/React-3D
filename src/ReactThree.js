@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import SpacePod from './components/SpacePod';
 import SpaceBackground from "./components/SpaceBackground";
 import CameraFunction from './components/Camera';
-import Spar from './components/Projects';
+import Projects from './components/Projects';
 import EarthLoading from "./components/Loading";
 
 function CameraDefault() {
@@ -27,15 +27,12 @@ function CameraDefault() {
   )
 }
 
-
-
  export default function ReactThree() {
     return (
       <div className="MainTest">
         <Canvas>
           <color attach="background" args={['#161c24']}/>
           <ambientLight intensity={0.01} />
-          <pointLight position={[1, 10, 10]} />
           <Suspense fallback={<EarthLoading/>}>
             
             <SpacePod/>
@@ -45,7 +42,7 @@ function CameraDefault() {
             <CameraFunction/>
 
             <Font/>
-            <Spar/>
+            <Projects/>
             <Contact/>
 
             <EffectComposer>
