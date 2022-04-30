@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-3d/static/css/main.520ee952.css",
-    "main.js": "/react-3d/static/js/main.8ca2d8ad.js",
+    "main.css": "/react-3d/static/css/main.d4914114.css",
+    "main.js": "/react-3d/static/js/main.4db8d1d6.js",
     "static/js/787.63967640.chunk.js": "/react-3d/static/js/787.63967640.chunk.js",
     "static/media/SpacePod.glb": "/react-3d/static/media/SpacePod.d7b1d3ad62704bd9cc48.glb",
     "static/media/spar_testing.jpg": "/react-3d/static/media/spar_testing.e487b64508a19d3f936c.jpg",
@@ -14,12 +14,12 @@
     "static/media/ArrowTwo.glb": "/react-3d/static/media/ArrowTwo.73d0330e8f2e1e2e0600.glb",
     "static/media/RewardBankT.png": "/react-3d/static/media/RewardBankT.5b559c0f1022cb408a4b.png",
     "index.html": "/react-3d/index.html",
-    "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
-    "main.8ca2d8ad.js.map": "/react-3d/static/js/main.8ca2d8ad.js.map",
+    "main.d4914114.css.map": "/react-3d/static/css/main.d4914114.css.map",
+    "main.4db8d1d6.js.map": "/react-3d/static/js/main.4db8d1d6.js.map",
     "787.63967640.chunk.js.map": "/react-3d/static/js/787.63967640.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.520ee952.css",
-    "static/js/main.8ca2d8ad.js"
+    "static/css/main.d4914114.css",
+    "static/js/main.4db8d1d6.js"
   ]
 }
