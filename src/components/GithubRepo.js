@@ -19,9 +19,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={(e) => { 
-              e.Github(
                 window.open('https://github.com/Menkoi/spar/tree/master')
-              )
               console.log("Box Clicked", e);
             }}/>
           <mesh>
@@ -47,9 +45,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={(e) => { 
-              e.Github(
                 window.open('https://github.com/project3UOT/bookend')
-              )
               console.log("Box Clicked", e);
             }}/>
           <mesh>
@@ -75,9 +71,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={(e) => { 
-              e.Github(
                 window.open('https://github.com/UTBootCampGroup2/SaveTV')
-              )
               console.log("Box Clicked", e);
             }}/>
           <mesh>
@@ -103,9 +97,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={(e) => { 
-              e.Github(
                 window.open('https://github.com/UTBootCampGroup2Project2/reward-bank')
-              )
               console.log("Box Clicked", e);
             }}/>
           <mesh>

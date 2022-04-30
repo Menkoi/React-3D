@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Text } from "@react-three/drei";
+import { Text, Html} from "@react-three/drei";
 
 function ProjectText() {
     const ref = useRef()
@@ -107,9 +107,49 @@ function ArrowleftText() {
         anchorX="center" // default
         anchorY="middle" // default
       >
-        LOREM IPSUM
+        ABOUT ME
       </Text>
     </mesh>
+  );
+}
+
+function AboutMe() {
+  const ref = useRef()
+  useFrame(() => {
+      ref.current.rotation.y =-0.03;  
+  });
+
+  return (
+    <group ref={ref}>
+      <mesh >
+      <Text
+        position={[-8.7,10,-60]}
+        scale={[10, 10, 10]}
+        color="white" // default
+        anchorX="center" // default
+        anchorY="middle" // default
+      >
+        ABOUT ME
+      </Text>
+      <Html  position={[-11,9.5,-60]} 
+      style={{
+            color: "white",
+            fontWeight:'Bold',
+          }}>
+            <div className="about">
+            <p>
+            My name is Brandon Burton. I am a front end developer with a background of leadership
+            skills from the US Army and life-long dedication to learning. Effective at 
+            combining creativity and problem solving to develop
+            user-friendly applications. Known for going the extra mile to meet deadlines to achieve that goal.
+             </p>
+            </div>
+           
+          </Html>
+    </mesh>
+
+    </group>
+    
   );
 }
 
@@ -121,6 +161,7 @@ return (
         <ContactText/>
         <ArrowRightText/>
         <ArrowleftText/>
+        <AboutMe/>
     </group>
 )
     

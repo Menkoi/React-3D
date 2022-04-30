@@ -30,10 +30,8 @@ import EmailLogo from '../img/Email.jpg'
       <group ref={ref}>
         <Cylinder
           onClick={(e) => { 
-            e.Github(
               window.open('https://github.com/Menkoi')
-            )
-            console.log("Box Clicked", e);
+            console.log("GitHub Clicked", e);
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
@@ -69,10 +67,8 @@ function LinkIn() {
     <group ref={ref}>
       <Cylinder
         onClick={(e) => {
-          e.LinkIn(
             window.open('https://www.linkedin.com/in/brandon-burton-9b59a2215/')
-          )
-          console.log("Box Clicked", e);
+          console.log("LinkedIn Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -108,9 +104,7 @@ function Email() {
     <group ref={ref}>
       <Cylinder
         onClick={(e) => {
-          e.Email(
             window.open('mailto:celaeon@gmail.com')
-          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}

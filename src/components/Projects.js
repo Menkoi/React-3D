@@ -29,9 +29,7 @@ import GithubRepo from './GithubRepo';
         <Box
           onClick={(e) => {
             console.log("Project 1 Clicked", e);
-            e.Spar(
               window.open('https://menkoi.github.io/spar/#/')
-            )
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
@@ -40,7 +38,7 @@ import GithubRepo from './GithubRepo';
         <mesh>
           <boxBufferGeometry />
           <meshStandardMaterial map={texture} />
-          <Html  position={[0.5,1.8,1]}style={{
+          <Html  position={[0.6,1.8,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -71,9 +69,7 @@ function ProjectTwo() {
       <Box
         onClick={(e) => {
           console.log("Project 2 Clicked", e);
-          e.BookEnd(
             window.open('http://bookend-recommendations.herokuapp.com/')
-          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -82,7 +78,7 @@ function ProjectTwo() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial map={texture}/>
-        <Html  position={[0.6,1.8,1]}style={{
+        <Html  position={[0.7,1.8,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
@@ -113,9 +109,7 @@ function ProjectThree() {
       <Box
         onClick={(e) => {
           console.log("Project 3 Clicked", e);
-          e.SaveTv(
             window.open('https://utbootcampgroup2.github.io/SaveTV/')
-          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -156,9 +150,7 @@ function ProjectFour() {
       <Box
         onClick={(e) => {
           console.log("Project 4 Clicked", e);
-          e.RewardBank(
             window.open('https://rocky-dawn-18669.herokuapp.com')
-          )
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -167,7 +159,7 @@ function ProjectFour() {
       <mesh>
         <boxBufferGeometry />
         <meshStandardMaterial map={texture} />
-        <Html  position={[0.6,1.5,1]}style={{
+        <Html  position={[0.7,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
