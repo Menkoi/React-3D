@@ -1,11 +1,11 @@
 import React, { useRef, useState} from "react";
 import { useFrame } from "@react-three/fiber";
-import { Box } from "@react-three/drei";
 
 import { useGLTF } from "@react-three/drei";
 import ArrowOne from '../Models/ArrowOne.glb';
 import ArrowTwo from '../Models/ArrowTwo.glb';
 import ArrowThree from '../Models/ArrowThree.glb';
+import ArrowFour from '../Models/ArrowFour.glb';
 
 // Goes to Projects
 function CameraOne() {
@@ -92,36 +92,36 @@ function CameraTwo() {
   // Camera Back Button *Goes to default camera*
   function BoxCameraTwoBack() {
     console.log("Box hover")
+    const gltf = useGLTF(ArrowFour);
     const ref = useRef();
     const [hover, set] = useState(false)
   
     useFrame(() => {
-      let scale = (ref.current.scale.x += ((hover ? 1.5 : 1) - ref.current.scale.x) * 0.1)
+      let scale = (ref.current.scale.x += ((hover ? 0.2 : 0.3) - ref.current.scale.x) * 0.1)
       ref.current.scale.set(scale, scale, scale)
       ref.current.position.x = -6.8;
       ref.current.position.y = -1.5;
       ref.current.position.z = -60; 
+
+      ref.current.rotation.x += 0.004;
+      ref.current.rotation.y += 0.004;
   });
     
     return (
-        <group ref={ref}>
-          <Box onClick={(e) => {
-            e.camera.position.x = 1
-            e.camera.position.y = 1
-            e.camera.position.z = 1
-  
-            e.camera.rotation.y = 0.01
-            
-          console.log('Box Clicked', e)}}
-             onPointerOver={() => set(true)}  
-             onPointerOut={() => set(false)} 
-             castShadow 
-             />
-             <mesh>
-             <boxBufferGeometry/>
-             <meshStandardMaterial/>
-             </mesh>
-        </group>
+      <primitive
+      ref={ref}
+      object={gltf.scene}
+      position={[-6.8, -1.5, -60]}
+      onPointerOver={() => set(true)}
+      onPointerOut={() => set(false)}
+      castShadow
+      onClick={(e) => {
+        e.camera.position.x = 1;
+        e.camera.position.y = 1;
+        e.camera.position.z = 1; 
+        e.camera.rotation.y = 0;
+        console.log("arrow clicked", e);
+      }} />
     )
   }
 

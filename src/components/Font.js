@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Text, Html} from "@react-three/drei";
+import {FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs,
+  FaBootstrap, FaNpm, FaGithub,FaFigma} from 'react-icons/fa';
+
+
+
 
 function ProjectText() {
     const ref = useRef()
@@ -122,29 +127,41 @@ function AboutMe() {
   return (
     <group ref={ref}>
       <mesh >
-      <Text
-        position={[-8.7,10,-60]}
-        scale={[10, 10, 10]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
-      >
-        ABOUT ME
-      </Text>
-      <Html  position={[-11,9.5,-60]} 
+      <Html  position={[-13.2,11,-60]} 
       style={{
             color: "white",
             fontWeight:'Bold',
           }}>
+            <div className="aboutHeader">
+              <h1>ABOUT ME</h1>
+            </div>
             <div className="about">
             <p>
             My name is Brandon Burton. I am a front end developer with a background of leadership
             skills from the US Army and life-long dedication to learning. Effective at 
             combining creativity and problem solving to develop
             user-friendly applications. Known for going the extra mile to meet deadlines to achieve that goal.
-             </p>
+            </p>
+            
             </div>
-           
+            <div className="icons">
+             <h2> Programming Languages & Tools</h2>
+             
+             <FaHtml5 size={40}/>
+             <FaCss3 size={40}/> 
+             <FaJs size={40}/> 
+             <FaReact size={40}/> 
+             <FaNodeJs size={40}/>
+             <FaBootstrap size={40}/> 
+             <FaNpm size={40}/> 
+             <FaGithub size={40}/>
+             <FaFigma size={40}/>
+             <h1>CERTIFICATES</h1>
+             <p>Fullstack Web Development Certificate</p>
+             <a href="https://drive.google.com/file/d/1HDTRstUBIZ5_dGM4VLUID82u7hoHrce2/view?usp=sharing"  class="btn-cert">
+              <button>View</button>
+             </a>
+             </div>
           </Html>
     </mesh>
 
