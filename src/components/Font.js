@@ -127,26 +127,20 @@ function AboutMe() {
   return (
     <group ref={ref}>
       <mesh >
-      <Html  position={[-13.2,11,-60]} 
+      <Html  position={[-11.5,11,-60]}
       style={{
             color: "white",
             fontWeight:'Bold',
           }}>
-            <div className="aboutHeader">
-              <h1>ABOUT ME</h1>
-            </div>
             <div className="about">
+              <h1>ABOUT ME</h1>
             <p>
             My name is Brandon Burton. I am a front end developer with a background of leadership
             skills from the US Army and life-long dedication to learning. Effective at 
             combining creativity and problem solving to develop
             user-friendly applications. Known for going the extra mile to meet deadlines to achieve that goal.
             </p>
-            
-            </div>
-            <div className="icons">
              <h1> Programming Languages & Tools</h1>
-             
              <FaHtml5 size={40}/>
              <FaCss3 size={40}/> 
              <FaJs size={40}/> 
@@ -156,7 +150,6 @@ function AboutMe() {
              <FaNpm size={40}/> 
              <FaGithub size={40}/>
              <FaFigma size={40}/>
-             <h1>CERTIFICATES</h1>
              <p>Fullstack Web Development Certificate</p>
              <a href="https://drive.google.com/file/d/1HDTRstUBIZ5_dGM4VLUID82u7hoHrce2/view?usp=sharing"  class="btn-cert">
               <button>View</button>

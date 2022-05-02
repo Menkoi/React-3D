@@ -10,21 +10,9 @@
   overflow: hidden;
 }
 
-.about p {
-  font-size: 20px;
-  width: 260%;
-  
-  
+.about {
+  display: flexbox;
+  width: 150%;
+  padding: 5px;
 }
 
-.icons {
-  width: 260%;
-}
-
-.icons p {
-  font-size: 20px;
-}
-
-.aboutHeader {
-  width: 260%;
-}

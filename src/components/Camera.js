@@ -90,7 +90,7 @@ function CameraTwo() {
 };
   
   // Camera Back Button *Goes to default camera*
-  function BoxCameraTwoBack() {
+  function CameraTwoBack() {
     console.log("Box hover")
     const gltf = useGLTF(ArrowFour);
     const ref = useRef();
@@ -99,9 +99,9 @@ function CameraTwo() {
     useFrame(() => {
       let scale = (ref.current.scale.x += ((hover ? 0.2 : 0.3) - ref.current.scale.x) * 0.1)
       ref.current.scale.set(scale, scale, scale)
-      ref.current.position.x = -6.8;
-      ref.current.position.y = -1.5;
-      ref.current.position.z = -60; 
+      ref.current.position.x = -6.7;
+      ref.current.position.y = -6.5;
+      ref.current.position.z = -70; 
 
       ref.current.rotation.x += 0.004;
       ref.current.rotation.y += 0.004;
@@ -111,7 +111,6 @@ function CameraTwo() {
       <primitive
       ref={ref}
       object={gltf.scene}
-      position={[-6.8, -1.5, -60]}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
       castShadow
@@ -132,7 +131,7 @@ return (
     <CameraOneBack/>
     
     <CameraTwo/>
-    <BoxCameraTwoBack />
+    <CameraTwoBack />
   </group>
 );
 }
