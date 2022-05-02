@@ -8,6 +8,8 @@ import BookEnd from '../img/BookEndT.png';
 import RewardBank from '../img/RewardBankT.png';
 import SaveTv from '../img/SaveTvT.png';
 import GithubRepo from './GithubRepo';
+import Quiz from '../img/js-logo.jpg';
+import TaskMaster from '../img/taskmaster.png';
 
  function ProjectOne() {
     const ref = useRef();
@@ -173,7 +175,7 @@ function ProjectFour() {
 function ProjectFive() {
   const ref = useRef();
   const [hover, set] = useState(false);
-
+  const texture = useLoader(TextureLoader, Quiz)
   useFrame(() => {
     let scale = (ref.current.scale.x +=
       ((hover ? 1.4 : 1.2) - ref.current.scale.x) * 0.1);
@@ -189,6 +191,7 @@ function ProjectFive() {
       <Box
         onClick={(e) => {
           console.log("Project 5 Clicked", e);
+          window.open('https://menkoi.github.io/coding-quiz/')
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -196,12 +199,12 @@ function ProjectFive() {
       />
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial />
+        <meshStandardMaterial map={texture}/>
         <Html  position={[0.4,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
-            <p>LOREM</p>
+            <p> QUIZ</p>
           </Html>
       </mesh>
     </group>
@@ -211,7 +214,7 @@ function ProjectFive() {
 function ProjectSix() {
   const ref = useRef();
   const [hover, set] = useState(false);
-
+  const texture = useLoader(TextureLoader, TaskMaster)
   useFrame(() => {
     let scale = (ref.current.scale.x +=
       ((hover ? 1.3: 1.1) - ref.current.scale.x) * 0.1);
@@ -227,6 +230,7 @@ function ProjectSix() {
       <Box
         onClick={(e) => {
           console.log("Project 6 Clicked", e);
+          window.open('https://menkoi.github.io/taskmaster-pro/')
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -235,12 +239,12 @@ function ProjectSix() {
 
       <mesh>
         <boxBufferGeometry />
-        <meshStandardMaterial />
+        <meshStandardMaterial map={texture}/>
         <Html  position={[0.2,1.5,1]}style={{
             color: "white",
             fontWeight:'Bold'
           }}>
-            <p>LOREM</p>
+            <p>TASK</p>
           </Html>
       </mesh>
     </group>

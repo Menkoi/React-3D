@@ -145,7 +145,7 @@ function AboutMe() {
             
             </div>
             <div className="icons">
-             <h2> Programming Languages & Tools</h2>
+             <h1> Programming Languages & Tools</h1>
              
              <FaHtml5 size={40}/>
              <FaCss3 size={40}/> 
@@ -164,7 +164,6 @@ function AboutMe() {
              </div>
           </Html>
     </mesh>
-
     </group>
     
   );

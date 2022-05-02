@@ -123,7 +123,7 @@ function GitHubOne() {
         <Cylinder
             onClick={(e) => { 
               e.Github(
-                window.open('')
+                window.open('https://github.com/Menkoi/coding-quiz')
               )
               console.log("Box Clicked", e);
             }}/>
@@ -149,7 +149,7 @@ function GitHubOne() {
         <Cylinder
             onClick={(e) => { 
               e.Github(
-                window.open('')
+                window.open('https://github.com/Menkoi/taskmaster-pro')
               )
               console.log("Box Clicked", e);
             }}/>
