@@ -31,7 +31,6 @@ import EmailLogo from '../img/Email.jpg'
         <Cylinder
           onClick={(e) => { 
               window.open('https://github.com/Menkoi')
-            console.log("GitHub Clicked", e);
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
@@ -68,13 +67,11 @@ function LinkIn() {
       <Cylinder
         onClick={(e) => {
             window.open('https://www.linkedin.com/in/brandon-burton-9b59a2215/')
-          console.log("LinkedIn Clicked", e);
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
         castShadow
       />
-
       <mesh>
         <cylinderBufferGeometry />
         <meshStandardMaterial  map={texture}/>

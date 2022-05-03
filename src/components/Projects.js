@@ -29,8 +29,7 @@ import TaskMaster from '../img/taskmaster.png';
     return (
       <group ref={ref}>
         <Box
-          onClick={(e) => {
-            console.log("Project 1 Clicked", e);
+          onClick={() => {
               window.open('https://menkoi.github.io/spar/#/')
           }}
           onPointerOver={() => set(true)}
@@ -69,8 +68,7 @@ function ProjectTwo() {
   return (
     <group ref={ref}>
       <Box
-        onClick={(e) => {
-          console.log("Project 2 Clicked", e);
+        onClick={() => {
             window.open('http://bookend-recommendations.herokuapp.com/')
         }}
         onPointerOver={() => set(true)}
@@ -109,8 +107,7 @@ function ProjectThree() {
   return (
     <group ref={ref}>
       <Box
-        onClick={(e) => {
-          console.log("Project 3 Clicked", e);
+        onClick={() => {
             window.open('https://utbootcampgroup2.github.io/SaveTV/')
         }}
         onPointerOver={() => set(true)}
@@ -150,8 +147,7 @@ function ProjectFour() {
   return (
     <group ref={ref}>
       <Box
-        onClick={(e) => {
-          console.log("Project 4 Clicked", e);
+        onClick={() => {
             window.open('https://rocky-dawn-18669.herokuapp.com')
         }}
         onPointerOver={() => set(true)}
@@ -189,8 +185,7 @@ function ProjectFive() {
   return (
     <group ref={ref}>
       <Box
-        onClick={(e) => {
-          console.log("Project 5 Clicked", e);
+        onClick={() => {
           window.open('https://menkoi.github.io/coding-quiz/')
         }}
         onPointerOver={() => set(true)}
@@ -228,8 +223,7 @@ function ProjectSix() {
   return (
     <group ref={ref}>
       <Box
-        onClick={(e) => {
-          console.log("Project 6 Clicked", e);
+        onClick={() => {
           window.open('https://menkoi.github.io/taskmaster-pro/')
         }}
         onPointerOver={() => set(true)}

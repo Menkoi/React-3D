@@ -18,9 +18,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
+            onClick={() => { 
                 window.open('https://github.com/Menkoi/spar/tree/master')
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
@@ -44,9 +43,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
+            onClick={() => { 
                 window.open('https://github.com/project3UOT/bookend')
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
@@ -70,9 +68,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
+            onClick={() => { 
                 window.open('https://github.com/UTBootCampGroup2/SaveTV')
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
@@ -96,9 +93,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
+            onClick={() => { 
                 window.open('https://github.com/UTBootCampGroup2Project2/reward-bank')
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
@@ -121,11 +117,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
-              e.Github(
+            onClick={() => { 
                 window.open('https://github.com/Menkoi/coding-quiz')
-              )
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
@@ -147,11 +140,8 @@ function GitHubOne() {
     return (
       <group ref={ref}>
         <Cylinder
-            onClick={(e) => { 
-              e.Github(
+            onClick={() => { 
                 window.open('https://github.com/Menkoi/taskmaster-pro')
-              )
-              console.log("Box Clicked", e);
             }}/>
           <mesh>
           <cylinderBufferGeometry/>

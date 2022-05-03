@@ -19,9 +19,9 @@ function ProjectText() {
       <mesh position={[-29.2, 46.5, -20]} ref={ref}>
         <Text
           scale={[15, 15, 15]}
-          color="white" // default
-          anchorX="center" // default
-          anchorY="middle" // default
+          color="white" 
+          anchorX="center" 
+          anchorY="middle" 
         >
           PROJECTS
         </Text>
@@ -40,18 +40,18 @@ function Info() {
       <Text
         position={[19.5,60,-20]}
         scale={[12, 12, 12]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
+        color="white" 
+        anchorX="center" 
+        anchorY="middle"
       >
         CLICK UNDER TO SEE THE GITHUB REPO
       </Text>
       <Text
         position={[19.5,62,-20]}
         scale={[12, 12, 12]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
+        color="white" 
+        anchorX="center" 
+        anchorY="middle"
       >
         CLICK THE BOX TO SEE THE LIVE SITE
       </Text>
@@ -70,9 +70,9 @@ function ContactText() {
       <mesh position={[-29.2, 36.5, -20]} ref={ref}>
         <Text
           scale={[15, 15, 15]}
-          color="white" // default
-          anchorX="center" // default
-          anchorY="middle" // default
+          color="white" 
+          anchorX="center" 
+          anchorY="middle"
         >
           CONTACT
         </Text>
@@ -90,9 +90,9 @@ function ArrowRightText() {
     <mesh position={[-6, -1.2, 1]} ref={ref}>
       <Text
         scale={[6, 6, 6]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
+        color="white"
+        anchorX="center"
+        anchorY="middle"
       >
         PROJECTS
       </Text>
@@ -110,9 +110,9 @@ function ArrowleftText() {
     <mesh position={[-0.4, -1.8, 1]} ref={ref}>
       <Text
         scale={[6, 6, 6]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
+        color="white"
+        anchorX="center"
+        anchorY="middle"
       >
         ABOUT ME
       </Text>

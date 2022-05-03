@@ -30,7 +30,6 @@ function CameraOne() {
         e.camera.position.x = 17;
         e.camera.position.y = 34;
         e.camera.position.z = 25;
-        console.log("arrow clicked", e);
       }}
     />
   );
@@ -58,7 +57,6 @@ function CameraOneBack() {
         e.camera.position.x = 1;
         e.camera.position.y = 1;
         e.camera.position.z = 1;
-        console.log("arrow clicked", e);
       }}/>;
 };
 
@@ -83,15 +81,13 @@ function CameraTwo() {
       onClick={(e) => {
         e.camera.position.x = -12;
         e.camera.position.y = -1;
-        e.camera.position.z = 22; //22
+        e.camera.position.z = 22; 
         e.camera.rotation.y = 2.7;
-        console.log("arrow clicked", e);
       }} />;
 };
   
   // Camera Back Button *Goes to default camera*
   function CameraTwoBack() {
-    console.log("Box hover")
     const gltf = useGLTF(ArrowFour);
     const ref = useRef();
     const [hover, set] = useState(false)
@@ -119,7 +115,6 @@ function CameraTwo() {
         e.camera.position.y = 1;
         e.camera.position.z = 1; 
         e.camera.rotation.y = 0;
-        console.log("arrow clicked", e);
       }} />
     )
   }
