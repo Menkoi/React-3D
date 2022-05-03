@@ -103,7 +103,7 @@ function Email() {
   return (
     <group ref={ref}>
       <Cylinder
-        onClick={(e) => {
+        onClick={() => {
             window.open('mailto:celaeon@gmail.com')
         }}
         onPointerOver={() => set(true)}

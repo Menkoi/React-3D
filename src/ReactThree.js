@@ -46,7 +46,7 @@ function CameraDefault() {
             <Contact/>
 
             <EffectComposer>
-            <Bloom intensity={0.5} kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.4} />
+            <Bloom intensity={0.3} kernelSize={2} luminanceThreshold={0} luminanceSmoothing={0.4} />
             </EffectComposer>
           </Suspense>
         </Canvas>

@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
-import { Text, Html} from "@react-three/drei";
+import { useFrame, useLoader } from "@react-three/fiber";
+import { Text, Html, Box} from "@react-three/drei";
+import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import {FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs,
   FaBootstrap, FaNpm, FaGithub,FaFigma} from 'react-icons/fa';
+  import Cert from '../img/cert.png'
 
 
 
@@ -127,38 +129,81 @@ function AboutMe() {
   return (
     <group ref={ref}>
       <mesh >
-      <Html  position={[-11.5,11,-60]}
-      style={{
+        <Text position={[-8.7,10,-60]} scale={[10,10,10]}>
+          ABOUT ME
+          </Text>
+          <Text position={[-8.7,9,-60]} scale={[3,3,4]} >
+           My name is Brandon Burton. I am a front end
+          </Text>
+          <Text position={[-8.7,8.6,-60]} scale={[3,3,4]}>
+             developer with a background of leadership skills
+             </Text>
+             <Text position={[-8.7,8.2,-60]} scale={[3,3,4]}>
+             from the US Army and life-long dedication to 
+             </Text>
+             <Text position={[-8.7,7.8,-60]} scale={[3,3,4]}>
+             learning. Effective at combining creativity and
+             </Text>
+             <Text position={[-8.7,7.4,-60]} scale={[3,3,4]}>
+             problem solving to develop user-friendly
+             </Text>
+             <Text position={[-8.7,7,-60]} scale={[3,3,4]}>
+             applications. Known for going the extra mile to 
+             </Text>
+             <Text position={[-8.7,6.6,-60]} scale={[3,3,4]}>
+             meet deadlines to achieve that goal.
+             </Text>
+             <Text position={[-8.7,5.8,-60]} scale={[6,6,6]}>
+           LANGUAGES & TOOLS
+          </Text>
+          <Html  position={[-11,5.3,-60]}
+           style={{
             color: "white",
-            fontWeight:'Bold',
+            padding: '5px',
+            display: 'flex',
+            margin: 'auto',
+            float: "center"
           }}>
-            <div className="about">
-              <h1>ABOUT ME</h1>
-            <p>
-            My name is Brandon Burton. I am a front end developer with a background of leadership
-            skills from the US Army and life-long dedication to learning. Effective at 
-            combining creativity and problem solving to develop
-            user-friendly applications. Known for going the extra mile to meet deadlines to achieve that goal.
-            </p>
-             <h1> Programming Languages & Tools</h1>
-             <FaHtml5 size={40}/>
-             <FaCss3 size={40}/> 
-             <FaJs size={40}/> 
-             <FaReact size={40}/> 
-             <FaNodeJs size={40}/>
-             <FaBootstrap size={40}/> 
-             <FaNpm size={40}/> 
-             <FaGithub size={40}/>
-             <FaFigma size={40}/>
-             <p>Fullstack Web Development Certificate</p>
-             <a href="https://drive.google.com/file/d/1HDTRstUBIZ5_dGM4VLUID82u7hoHrce2/view?usp=sharing"  class="btn-cert">
-              <button>View</button>
-             </a>
-             </div>
+            <FaHtml5 size={30}/>
+             <FaCss3 size={30}/> 
+             <FaJs size={30}/> 
+             <FaReact size={30}/> 
+             <FaNodeJs size={30}/>
+             <FaBootstrap size={30}/> 
+             <FaNpm size={30}/> 
+             <FaGithub size={30}/>
+             <FaFigma size={30}/>
           </Html>
     </mesh>
     </group>
     
+  );
+}
+
+function Certificate() {
+  const ref = useRef();
+  const texture = useLoader(TextureLoader, Cert)
+
+  useFrame(() => {
+    ref.current.position.x = -6.3;
+    ref.current.position.y = 0.8;
+    ref.current.position.z = -70;
+
+    ref.current.scale.x = 9;
+    ref.current.scale.y = 7;
+    ref.current.scale.z = 0.01;
+
+   ref.current.rotation.y += 0.007;
+  });
+
+  return (
+    <group ref={ref}>
+      <Box />
+      <mesh>
+        <boxBufferGeometry />
+        <meshStandardMaterial map={texture} />
+      </mesh>
+    </group>
   );
 }
 
@@ -171,6 +216,7 @@ return (
         <ArrowRightText/>
         <ArrowleftText/>
         <AboutMe/>
+        <Certificate/>
     </group>
 )
     
