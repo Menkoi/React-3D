@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/react-3d/static/css/main.1fe1f827.css",
-    "main.js": "/react-3d/static/js/main.1c7f057f.js",
+    "main.css": "/react-3d/static/css/main.520ee952.css",
+    "main.js": "/react-3d/static/js/main.365f78ab.js",
     "static/js/787.63967640.chunk.js": "/react-3d/static/js/787.63967640.chunk.js",
     "static/media/SpacePod.glb": "/react-3d/static/media/SpacePod.d7b1d3ad62704bd9cc48.glb",
     "static/media/spar_testing.jpg": "/react-3d/static/media/spar_testing.e487b64508a19d3f936c.jpg",
+    "static/media/cert.png": "/react-3d/static/media/cert.21819c51e3896714a7d2.png",
     "static/media/SaveTvT.png": "/react-3d/static/media/SaveTvT.51a6e67b2ec50e390990.png",
     "static/media/Earth.jpg": "/react-3d/static/media/Earth.4bfe05e498704c33d776.jpg",
     "static/media/BookEndT.png": "/react-3d/static/media/BookEndT.1c5c3725b6df43a02025.png",
@@ -16,12 +17,12 @@
     "static/media/ArrowTwo.glb": "/react-3d/static/media/ArrowTwo.73d0330e8f2e1e2e0600.glb",
     "static/media/RewardBankT.png": "/react-3d/static/media/RewardBankT.5b559c0f1022cb408a4b.png",
     "index.html": "/react-3d/index.html",
-    "main.1fe1f827.css.map": "/react-3d/static/css/main.1fe1f827.css.map",
-    "main.1c7f057f.js.map": "/react-3d/static/js/main.1c7f057f.js.map",
+    "main.520ee952.css.map": "/react-3d/static/css/main.520ee952.css.map",
+    "main.365f78ab.js.map": "/react-3d/static/js/main.365f78ab.js.map",
     "787.63967640.chunk.js.map": "/react-3d/static/js/787.63967640.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fe1f827.css",
-    "static/js/main.1c7f057f.js"
+    "static/css/main.520ee952.css",
+    "static/js/main.365f78ab.js"
   ]
 }
