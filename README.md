@@ -8,7 +8,7 @@ Click the link to vist the site!
 https://menkoi.github.io/react-3d/
 
 ## Screenshots
-Loading Screen...
+Loading Screen...  (Depending on your internet connection & computer hardware, the site might take time to load)
 <img src="https://i.imgur.com/TEG77MA.png"/>
 
 Landing Page...
