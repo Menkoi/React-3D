@@ -3,7 +3,7 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { Cylinder } from "@react-three/drei";
 
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import GithubText from '../img/GithubText.png';
+import GithubText from '../img/GithubText.webp';
 
 function GitHubOne() {
     const ref = useRef();

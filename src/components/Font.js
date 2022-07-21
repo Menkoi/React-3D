@@ -4,10 +4,7 @@ import { Text, Html, Box} from "@react-three/drei";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import {FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs,
   FaBootstrap, FaNpm, FaGithub,FaFigma} from 'react-icons/fa';
-  import Cert from '../img/cert.png'
-
-
-
+  import Cert from '../img/cert.webp'
 
 function ProjectText() {
     const ref = useRef()

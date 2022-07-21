@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Html } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
-import Earth from '../img/Earth.jpg';
+import Earth from '../img/Earth.webp';
 
 export default function EarthLoading() {
     const scene = useRef();

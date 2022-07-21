@@ -1,11 +1,11 @@
 import React, { useRef, useState} from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { Cylinder } from "@react-three/drei";
-
-import { TextureLoader } from 'three/src/loaders/TextureLoader'; 
-import Github from '../img/github-logo.png';
-import LinkedIn from '../img/linkedin-logo.png';
-import EmailLogo from '../img/Email.jpg'
+import { TextureLoader } from 'three/src/loaders/TextureLoader';
+ 
+import Github from '../img/github-logo.webp';
+import LinkedIn from '../img/linkedin-logo.webp';
+import EmailLogo from '../img/Email.webp'
 
 
  function GitHub() {

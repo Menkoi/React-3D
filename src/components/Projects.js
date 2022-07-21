@@ -1,16 +1,19 @@
 import React, { useRef, useState } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { Box, Html } from "@react-three/drei";
-
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import Spar from '../img/spar_testing.jpg';
-import BookEnd from '../img/BookEndT.png';
-import RewardBank from '../img/RewardBankT.png';
-import SaveTv from '../img/SaveTvT.png';
-import GithubRepo from './GithubRepo';
-import Quiz from '../img/js-logo.jpg';
-import TaskMaster from '../img/taskmaster.png';
 
+// Importing images for project box
+import Spar from '../img/spar_testing.webp';
+import BookEnd from '../img/BookEndT.webp';
+import RewardBank from '../img/RewardBankT.webp';
+import SaveTv from '../img/SaveTv.webp';
+import Quiz from '../img/js-logo.webp';
+import TaskMaster from '../img/taskmaster.webp';
+
+import GithubRepo from './GithubRepo';
+
+//Spar
  function ProjectOne() {
     const ref = useRef();
     const [hover, set] = useState(false);
@@ -50,6 +53,7 @@ import TaskMaster from '../img/taskmaster.png';
     );
 }
 
+//BookEnd
 function ProjectTwo() {
   const ref = useRef();
   const [hover, set] = useState(false);
@@ -89,6 +93,7 @@ function ProjectTwo() {
   );
 }
 
+//SaveTV
 function ProjectThree() {
   const ref = useRef();
   const [hover, set] = useState(false);
@@ -129,6 +134,7 @@ function ProjectThree() {
   );
 }
 
+//Reward Bank
 function ProjectFour() {
   const ref = useRef();
   const [hover, set] = useState(false);
@@ -168,6 +174,7 @@ function ProjectFour() {
   );
 }
 
+//Coding Quiz
 function ProjectFive() {
   const ref = useRef();
   const [hover, set] = useState(false);
@@ -206,6 +213,7 @@ function ProjectFive() {
   );
 }
 
+//Taskmaster
 function ProjectSix() {
   const ref = useRef();
   const [hover, set] = useState(false);
