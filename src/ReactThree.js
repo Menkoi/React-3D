@@ -3,6 +3,7 @@ import {Canvas, useFrame } from "@react-three/fiber";
 import { PerspectiveCamera } from "@react-three/drei";
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
+// Components
 import Font from './components/Font';
 import Contact from './components/Contact';
 import SpacePod from './components/SpacePod';
@@ -11,6 +12,7 @@ import CameraFunction from './components/Camera';
 import Projects from './components/Projects';
 import EarthLoading from "./components/Loading";
 
+// Landing page default camera
 function CameraDefault() {
   const scene = useRef();
   useFrame(() => {
@@ -22,7 +24,7 @@ function CameraDefault() {
   });
   return (
       <group ref={scene}>
-        <PerspectiveCamera makeDefault ></PerspectiveCamera>
+        <PerspectiveCamera makeDefault />
       </group>
   )
 }
