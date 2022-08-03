@@ -2,12 +2,63 @@
   text-align: center;
 }
 
-.MainTest {
-  /*height: 100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden; */
+.Main {
   height: 100vh !important;
+}
+
+.jumboHeader {
+  color: #3ccfe3;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  font-size: 9vw;
+  font-weight: 700;
+  width: 20%;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.subHeader {
+  color: #3ccfe3;
+  max-width: 550px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0 auto;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.aboutText {
+  color: white;
+  max-width: 60vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.cardBody {
+  background: #3CCFE3;
+  background: -moz-linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
+  background: -webkit-linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
+  background: linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 0.1em;
+  font-size: 9vw;
+  width: 40vw;
+}
+
+
+@keyframes fade {
+  from {opacity: 0.0}
+  to {opacity: 1}
 }
 

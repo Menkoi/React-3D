@@ -7,7 +7,8 @@ import ArrowTwo from '../Models/ArrowTwo.glb';
 import ArrowThree from '../Models/ArrowThree.glb';
 import ArrowFour from '../Models/ArrowFour.glb';
 
-// Goes to Projects
+
+// Goes to About
 function CameraOne() {
   const gltf = useGLTF(ArrowOne);
   const ref = useRef();
@@ -22,10 +23,9 @@ function CameraOne() {
     <primitive
       ref={ref}
       object={gltf.scene}
-      position={[-4.8, -3, 1.5]}
+      position={[-5.5, -3, 1.5]}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
-      castShadow
       onClick={(e) => {
         e.camera.position.x = 17;
         e.camera.position.y = 34;
@@ -52,7 +52,6 @@ function CameraOneBack() {
       position={[-27, 30, -15]}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
-      castShadow
       onClick={(e) => {
         e.camera.position.x = 1;
         e.camera.position.y = 1;
@@ -60,7 +59,7 @@ function CameraOneBack() {
       }}/>;
 };
 
-// Goes to About Me
+// Goes to Projects
 function CameraTwo() {
   const gltf = useGLTF(ArrowThree);
   const ref = useRef();
@@ -77,7 +76,6 @@ function CameraTwo() {
       position={[-1, -3.5, 1.5]}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
-      castShadow
       onClick={(e) => {
         e.camera.position.x = -12;
         e.camera.position.y = -1;
@@ -109,7 +107,6 @@ function CameraTwo() {
       object={gltf.scene}
       onPointerOver={() => set(true)}
       onPointerOut={() => set(false)}
-      castShadow
       onClick={(e) => {
         e.camera.position.x = 1;
         e.camera.position.y = 1;
