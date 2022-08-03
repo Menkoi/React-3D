@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-3d/static/css/main.7009c63f.css",
-    "main.js": "/react-3d/static/js/main.c6ab6277.js",
+    "main.css": "/react-3d/static/css/main.e1ec8ab7.css",
+    "main.js": "/react-3d/static/js/main.7f9a3697.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
-    "static/media/SpacePod.glb": "/react-3d/static/media/SpacePod.d7b1d3ad62704bd9cc48.glb",
-    "static/media/cert.webp": "/react-3d/static/media/cert.bf6835cf7a31e4993fe1.webp",
+    "static/media/wireframe.glb": "/react-3d/static/media/wireframe.3d042b71b1cfcf1332ff.glb",
     "static/media/Earth.webp": "/react-3d/static/media/Earth.e55f1f5c847d04c62e59.webp",
-    "static/media/spar_testing.webp": "/react-3d/static/media/spar_testing.72669ac6783c51942e7c.webp",
-    "static/media/BookEndT.webp": "/react-3d/static/media/BookEndT.615440092e7a71af298b.webp",
+    "static/media/Ring.webp": "/react-3d/static/media/Ring.669ab72eefc77afa2692.webp",
+    "static/media/spar.webp": "/react-3d/static/media/spar.72669ac6783c51942e7c.webp",
+    "static/media/BookEnd.webp": "/react-3d/static/media/BookEnd.615440092e7a71af298b.webp",
     "static/media/ArrowFour.glb": "/react-3d/static/media/ArrowFour.73d0330e8f2e1e2e0600.glb",
     "static/media/ArrowOne.glb": "/react-3d/static/media/ArrowOne.73d0330e8f2e1e2e0600.glb",
     "static/media/ArrowThree.glb": "/react-3d/static/media/ArrowThree.73d0330e8f2e1e2e0600.glb",
     "static/media/ArrowTwo.glb": "/react-3d/static/media/ArrowTwo.73d0330e8f2e1e2e0600.glb",
     "static/media/js-logo.webp": "/react-3d/static/media/js-logo.d0d53e3b9c69244e4e1a.webp",
-    "static/media/RewardBankT.webp": "/react-3d/static/media/RewardBankT.1f47e813dec711796251.webp",
+    "static/media/RewardBank.webp": "/react-3d/static/media/RewardBank.1f47e813dec711796251.webp",
     "static/media/Email.webp": "/react-3d/static/media/Email.5e4f4db07d9866dd17b7.webp",
     "static/media/github-logo.webp": "/react-3d/static/media/github-logo.195caceb6caf6ecbbfb0.webp",
     "static/media/linkedin-logo.webp": "/react-3d/static/media/linkedin-logo.898356bbe407e8d7a1b5.webp",
@@ -21,12 +21,12 @@
     "static/media/GithubText.webp": "/react-3d/static/media/GithubText.e5f6d5c4053149350ce0.webp",
     "static/media/taskmaster.webp": "/react-3d/static/media/taskmaster.3e1fbaeb141861b06cd9.webp",
     "index.html": "/react-3d/index.html",
-    "main.7009c63f.css.map": "/react-3d/static/css/main.7009c63f.css.map",
-    "main.c6ab6277.js.map": "/react-3d/static/js/main.c6ab6277.js.map",
+    "main.e1ec8ab7.css.map": "/react-3d/static/css/main.e1ec8ab7.css.map",
+    "main.7f9a3697.js.map": "/react-3d/static/js/main.7f9a3697.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7009c63f.css",
-    "static/js/main.c6ab6277.js"
+    "static/css/main.e1ec8ab7.css",
+    "static/js/main.7f9a3697.js"
   ]
 }
