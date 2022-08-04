@@ -20,18 +20,6 @@ export default function About() {
                   Web developer with a love for coding and learning new
                   technologies
                 </p>
-
-                <div>
-                  <FaHtml5 size={30} />
-                  <FaCss3 size={30} />
-                  <FaJs size={30} />
-                  <FaReact size={30} />
-                  <FaNodeJs size={30} />
-                  <FaBootstrap size={30} />
-                  <FaNpm size={30} />
-                  <FaGithub size={30} />
-                  <FaFigma size={30} />
-                </div>
                 
                 <div>
                   <h2>Certificates</h2>
@@ -42,7 +30,24 @@ export default function About() {
 
                 <div>
                   <h2>Resume</h2>
-                  <a href="https://drive.google.com/file/d/1jpAmzOtWDRuTgAF-HEVXvCNCyVewFK9W/view?usp=sharing">Click to view Resume</a>
+                  <a href="https://drive.google.com/file/d/1jpAmzOtWDRuTgAF-HEVXvCNCyVewFK9W/view?usp=sharing" target="blank">Click to view Resume</a>
+                </div>
+                
+                <div>
+                  <h2>Technologies</h2>
+
+                  <div>
+                  <FaHtml5 size={30} />
+                  <FaCss3 size={30} />
+                  <FaJs size={30} />
+                  <FaReact size={30} />
+                  <FaNodeJs size={30} />
+                  <FaBootstrap size={30} />
+                  <FaNpm size={30} />
+                  <FaGithub size={30} />
+                  <FaFigma size={30} />
+                </div>
+
                 </div>
               </div>
             </div>
