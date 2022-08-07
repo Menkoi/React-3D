@@ -15,7 +15,7 @@ export default function Landing() {
         <Text>
           <Html class= "container">
             <h1 class="jumboHeader">Hello</h1>
-            <p class="subHeader"> Welcome to my portfolio</p>
+            <p class="subHeader">Welcome to my portfolio</p>
           </Html>
           <Torus/>
         </Text>

@@ -43,10 +43,9 @@ import Contact from './Contact';
         <mesh>
           <boxBufferGeometry />
           <meshStandardMaterial map={texture} />
-          <Html position={[2,1.76,-0.7]}style={{
-            color: "white",
-            fontWeight:'Bold'
-          }}>
+          <Html position={[2,1.76,-0.7]}
+          style={{color: "white",fontWeight:'Bold'}}
+          >
             <p>SPAR</p>
           </Html>
         </mesh>
@@ -264,7 +263,6 @@ export default function Projects() {
       <GithubRepo/>
 
       <Contact/>
-
     </group>
   )
 }
