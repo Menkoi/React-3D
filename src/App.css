@@ -4,6 +4,7 @@
 
 .Main {
   height: 100vh !important;
+  width: 100vw !important;
 }
 
 .jumboHeader {
@@ -34,29 +35,57 @@
 
 .aboutText {
   color: white;
-  max-width: 60vw;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   font-weight: 600;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
+}
+
+.certs {
+  padding-top: 20px;
 }
 
 .cardBody {
+  position: fixed;
+  overflow-y: auto;
+  height: 70vh;
+  width: 55vw;
+  transform: translate(0%,0%);
+  padding: 25px;
+  
+
   background: #3CCFE3;
   background: -moz-linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
   background: -webkit-linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
   background: linear-gradient(45deg, #3CCFE3 0%, #0D7F9F 54%, #000000 100%);
   border-radius: 5px;
-  padding: 5px;
-  margin-top: 0.1em;
-  font-size: 9vw;
-  width: 55vw;
-
 }
 
+.img {
+    width: 30vw;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+/* Scrollbar */
+.cardBody::-webkit-scrollbar-track {
+  padding: 2px 0;
+  border-radius: 5px;
+  background-color: #3CCFE3;
+}
+
+.cardBody::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.cardBody::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #BeB8B1;
+}
 
 @keyframes fade {
   from {opacity: 0.0}

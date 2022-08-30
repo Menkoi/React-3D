@@ -4,7 +4,7 @@ import { Box, Html } from "@react-three/drei";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 
 // Images for project box texture
-import Spar from '../../img/spar.webp';
+import Backroom from '../../img/Backroom.webp';
 import BookEnd from '../../img/BookEnd.webp';
 import RewardBank from '../../img/RewardBank.webp';
 import SaveTv from '../../img/SaveTv.webp';
@@ -19,7 +19,7 @@ import Contact from './Contact';
  function ProjectOne() {
     const ref = useRef();
     const [hover, set] = useState(false);
-    const texture = useLoader(TextureLoader, Spar)
+    const texture = useLoader(TextureLoader, Backroom)
 
     useFrame(() => {
       let scale = (ref.current.scale.x +=
@@ -35,7 +35,7 @@ import Contact from './Contact';
       <group ref={ref}>
         <Box
           onClick={() => {
-              window.open('https://menkoi.github.io/spar/#/')
+              window.open('https://menkoi.github.io/Backrooms/')
           }}
           onPointerOver={() => set(true)}
           onPointerOut={() => set(false)}
@@ -43,10 +43,10 @@ import Contact from './Contact';
         <mesh>
           <boxBufferGeometry />
           <meshStandardMaterial map={texture} />
-          <Html position={[2,1.76,-0.7]}
+          <Html position={[2,1.76,-1]}
           style={{color: "white",fontWeight:'Bold'}}
           >
-            <p>SPAR</p>
+            <p>BACKROOM</p>
           </Html>
         </mesh>
       </group>

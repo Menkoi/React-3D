@@ -19,7 +19,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={() => { 
-                window.open('https://github.com/Menkoi/spar/tree/master')
+                window.open('https://github.com/Menkoi/Backrooms')
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
