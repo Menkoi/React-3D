@@ -7,7 +7,7 @@ import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import Backroom from '../../img/Backroom.webp';
 import BookEnd from '../../img/BookEnd.webp';
 import RewardBank from '../../img/RewardBank.webp';
-import SaveTv from '../../img/SaveTv.webp';
+import Spar from '../../img/Spar.webp';
 import Quiz from '../../img/js-logo.webp';
 import TaskMaster from '../../img/taskmaster.webp';
 
@@ -15,7 +15,7 @@ import GithubRepo from './GithubRepo';
 import Font from './Font';
 import Contact from './Contact';
 
-// Spar
+// Backroom
  function ProjectOne() {
     const ref = useRef();
     const [hover, set] = useState(false);
@@ -92,11 +92,11 @@ function ProjectTwo() {
   );
 }
 
-// SaveTV
+// Spar
 function ProjectThree() {
   const ref = useRef();
   const [hover, set] = useState(false);
-  const texture = useLoader(TextureLoader, SaveTv)
+  const texture = useLoader(TextureLoader, Spar)
 
   useFrame(() => {
     let scale = (ref.current.scale.x +=
@@ -112,7 +112,7 @@ function ProjectThree() {
     <group ref={ref}>
       <Box
         onClick={() => {
-            window.open('https://utbootcampgroup2.github.io/SaveTV/')
+            window.open('https://menkoi.github.io/spar/#/')
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -125,7 +125,7 @@ function ProjectThree() {
             color: "white",
             fontWeight:'Bold'
           }}>
-            <p>SAVETV</p>
+            <p>SPAR</p>
           </Html>
       </mesh>
     </group>

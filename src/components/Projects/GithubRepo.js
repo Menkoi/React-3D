@@ -69,7 +69,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={() => { 
-                window.open('https://github.com/UTBootCampGroup2/SaveTV')
+                window.open('https://github.com/Menkoi/spar')
             }}/>
           <mesh>
           <cylinderBufferGeometry/>
