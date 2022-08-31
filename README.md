@@ -17,7 +17,6 @@ A portfolio website to showcase past projects, view resume, and show certificate
 - React Three Drei
 - React Three Postprocessing
 - React Icons
-- Bootstrap
 
 ## Screenshots
 <img src="https://i.imgur.com/gAHlaGT.png"/>
