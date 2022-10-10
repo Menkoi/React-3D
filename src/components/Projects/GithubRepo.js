@@ -141,7 +141,7 @@ function GitHubOne() {
       <group ref={ref}>
         <Cylinder
             onClick={() => { 
-                window.open('https://github.com/Menkoi/taskmaster-pro')
+                window.open('https://github.com/Menkoi/vukov')
             }}/>
           <mesh>
           <cylinderBufferGeometry/>

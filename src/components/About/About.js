@@ -23,7 +23,7 @@ export default function About() {
               <div class="aboutText">
                 <div>
                   <h2>Resume</h2>
-                  <a href="https://drive.google.com/file/d/1jpAmzOtWDRuTgAF-HEVXvCNCyVewFK9W/view?usp=sharing" target="blank">Click to view Resume</a>
+                  <a href="https://drive.google.com/file/d/1jpAmzOtWDRuTgAF-HEVXvCNCyVewFK9W/view?usp=sharing" target="blank" className="resume">Click to view Resume</a>
                 </div>
 
                 <div className="certs">

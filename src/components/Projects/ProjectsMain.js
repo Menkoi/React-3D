@@ -9,7 +9,7 @@ import BookEnd from '../../img/BookEnd.webp';
 import RewardBank from '../../img/RewardBank.webp';
 import Spar from '../../img/Spar.webp';
 import Quiz from '../../img/js-logo.webp';
-import TaskMaster from '../../img/taskmaster.webp';
+import Brain from '../../img/Brain.webp';
 
 import GithubRepo from './GithubRepo';
 import Font from './Font';
@@ -213,7 +213,7 @@ function ProjectFive() {
 function ProjectSix() {
   const ref = useRef();
   const [hover, set] = useState(false);
-  const texture = useLoader(TextureLoader, TaskMaster)
+  const texture = useLoader(TextureLoader, Brain)
   useFrame(() => {
     let scale = (ref.current.scale.x +=
       ((hover ? 1.4: 1.2) - ref.current.scale.x) * 0.1);
@@ -228,7 +228,7 @@ function ProjectSix() {
     <group ref={ref}>
       <Box
         onClick={() => {
-          window.open('https://menkoi.github.io/taskmaster-pro/')
+          window.open('https://menkoi.github.io/vukov/')
         }}
         onPointerOver={() => set(true)}
         onPointerOut={() => set(false)}
@@ -241,7 +241,7 @@ function ProjectSix() {
             color: "white",
             fontWeight:'Bold'
           }}>
-            <p>TASK</p>
+            <p>BRAIN</p>
           </Html>
       </mesh>
     </group>
