@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-3d/static/css/main.5c6aa4ca.css",
-    "main.js": "/react-3d/static/js/main.fe514af5.js",
+    "main.js": "/react-3d/static/js/main.02c3ba63.js",
     "static/js/787.c0a1ced6.chunk.js": "/react-3d/static/js/787.c0a1ced6.chunk.js",
     "static/media/wireframe.glb": "/react-3d/static/media/wireframe.3d042b71b1cfcf1332ff.glb",
     "static/media/CS50Cert.webp": "/react-3d/static/media/CS50Cert.7c22674b340eb0e0ca01.webp",
@@ -25,11 +25,11 @@
     "static/media/GithubText.webp": "/react-3d/static/media/GithubText.e5f6d5c4053149350ce0.webp",
     "index.html": "/react-3d/index.html",
     "main.5c6aa4ca.css.map": "/react-3d/static/css/main.5c6aa4ca.css.map",
-    "main.fe514af5.js.map": "/react-3d/static/js/main.fe514af5.js.map",
+    "main.02c3ba63.js.map": "/react-3d/static/js/main.02c3ba63.js.map",
     "787.c0a1ced6.chunk.js.map": "/react-3d/static/js/787.c0a1ced6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c6aa4ca.css",
-    "static/js/main.fe514af5.js"
+    "static/js/main.02c3ba63.js"
   ]
 }
