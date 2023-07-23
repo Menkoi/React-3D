@@ -22,10 +22,5 @@ A portfolio website to showcase past projects, view resume, and show certificate
 <img src="https://i.imgur.com/gAHlaGT.png"/>
 <img src="https://i.imgur.com/5qIbwY7.png"/>
 
-## Contact Me
-  - Menkoi
-  - https://github.com/Menkoi
-  - celaeon@gmail.com
-
 
 
